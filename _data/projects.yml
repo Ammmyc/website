@@ -1,0 +1,108 @@
+# Projects data
+# Each item: id, image, title, pi, co_pis, amount, years, funder, description, link, tag, origin
+
+- id: project-soothe-2025-2027
+  image: /assets/img/bg/pexels-ryan-millier-1693965-3250582.webp
+  title: "Project Soothe HK — Young Ambassador Program"
+  pi: "(PI) Tung Wah Hospital Group"
+  co_pis: ["Stella Chan"]
+  funder: "Tung Wah Hospital Group"
+  amount: "HKD 150,000"
+  years: "2025–2027"
+  description: "Community programme supporting young ambassadors under Project Soothe HK. Co-PI Stella Chan is listed as project collaborator. (See Project Soothe website for full details.)"
+  link: "https://www.projectsoothe.hk"
+  tag: ["soothe","community","young-ambassadors"]
+  origin: "project/project1"
+
+- id: project-eol-pilot-2025-2027
+  image: assets/img/bg/pexels-ryan-millier-1693965-3250582.webp
+  title: "End of Life Care for Younger Patients — Pilot Study Evaluation"
+  pi: "HK Jockey Club Charities Trust (PI)"
+  co_pis: ["Erin Li (HKU)"]
+  funder: "HK Jockey Club Charities Trust"
+  amount: "HKD 1,200,000"
+  years: "2025–2027"
+  description: "A pilot evaluation of end-of-life care models tailored for younger patients. (Contact Erin Li for bio and project details.)"
+  link: ""
+  tag: ["end-of-life","pilot","evaluation"]
+  origin: "project/project2"
+
+- id: project-compassion-life-review-2024-2025
+  image: assets/img/bg/pexels-jimbear-2926723.webp
+  title: "Empowering Ethnic Minority Elderly with Life Story — A Compassion-based Life Review Intervention"
+  pi: "Vera Ruttonjee Desai Charitable Fund (PI)"
+  co_pis: ["Ava Kam","Edmund Lo"]
+  funder: "Vera Ruttonjee Desai Charitable Fund"
+  amount: "HKD 1,240,091"
+  years: "2024–2025"
+  description: "A compassion-focused life-review intervention co-designed for ethnic minority elders to preserve life stories and wellbeing. (See presentation for project description and collaborators Ava Kam and Edmund Lo.)"
+  link: ""
+  tag: ["elderly","compassion","life-review"]
+  origin: "project/project3"
+
+
+- id: project-24-flavours-2023-2025
+  image: assets/img/bg/(The Belcher's)DSC_1489.jpg
+  title: "24 Flavours of Positive Thinking"
+  pi: "Child Development Initiative Alliance"
+  funder: "Child Development Initiative Alliance (CDIA)"
+  amount: "HKD 200,000"
+  years: "2023–2025"
+  description: "A project promoting positive thinking strategies for children and families, funded by CDIA."
+  link: ""
+  tag: ["positive-thinking","children","CDIA"]
+  origin: "project/project4"
+
+- id: project-employment-drug-impact
+  image: assets/img/bg/pexels-picjumbo-com-55570-210661.webp
+  title: "Impact of Employment Experiences on Drug Abuse and Rehabilitation Engagement"
+  pi: "Co-Investigator: Beat Drug Fund"
+  co_pis: []
+  funder: "Beat Drug Fund"
+  amount: "HKD 655,960"
+  years: ""
+  description: "Study of employment experiences and their relation to drug abuse and rehabilitation engagement among younger and middle-aged working drug abusers. (Project listed as Co-I.)"
+  link: ""
+  tag: ["drug-rehabilitation","employment"]
+  origin: "project/project5"
+
+- id: project-ai-dependency
+  image: assets/img/bg/pexels-ryan-millier-1693965-3250582.webp
+  title: "Longitudinal Effect of AI Use and Emotional Dependency"
+  pi: "HKU internal grant (PI)"
+  co_pis: ["Wei Xiyu (CoPI)"]
+  funder: "HKU internal"
+  amount: ""
+  years: ""
+  description: "Longitudinal study investigating emotional dependency and outcomes related to AI use. (Co-PI: Wei Xiyu)"
+  link: ""
+  tag: ["AI","longitudinal","emotional-dependency"]
+  origin: "project/project7"
+
+- id: project-ai-selfdisclosure-ugc
+  image: assets/img/bg/pexels-jimbear-2926723.webp
+  title: "Self-disclosure to AI, Self-compassion and Existential Loneliness"
+  pi: "UGC-Matching Grant (5th Phase)"
+  co_pis: ["Cherry Xie WeiYi","Susie Wei Xiyu"]
+  funder: "UGC-Matching Grant (5th Phase)"
+  amount: ""
+  years: ""
+  description: "Investigating relationships between self-disclosure to AI, self-compassion, and existential loneliness. (Team includes Cherry Xie WeiYi and Susie Wei Xiyu.)"
+  link: ""
+  tag: ["AI","self-disclosure","UGC"]
+  origin: "project/project6"
+
+- id: project-depression-high-ability
+  image: assets/img/bg/pexels-xespri-724994.webp
+  title: "Depression in High-Ability Adolescents: A Cross-Cultural Study"
+  pi: "RGC-Faculty Development Scheme (former PI)"
+  funder: "RGC - Faculty Development Scheme (FDS)"
+  grant_code: "UGC/FDS16/H11/21"
+  amount: "HKD 1,149,824"
+  years: ""
+  description: "Cross-cultural study of depression in high-ability adolescents with collaborators in Netherlands, Taiwan, UK and Hong Kong. Use `map_collaborations` for visual mapping."
+  map_collaborations: ["Netherlands","Taiwan","United Kingdom","Hong Kong"]
+  link: ""
+  tag: ["depression","cross-cultural","adolescents"]
+  origin: "project/project7"
+

@@ -1,0 +1,125 @@
+.container-projects
+  position: relative
+  padding: 5vh
+  background: $secondary
+  hr
+    border: none // removes default border
+    height: 1px // sets thickness
+    background-color: $background // uses your theme color
+    margin: 2px 0 // adds spacing above and below
+    width: 100% // ensures it stretches across the container
+  .header-and-search
+    display: flex
+    flex-direction: row
+    margin-top: 18vh
+    margin-bottom: 2vh
+    @media screen and (max-width: 600px)
+      margin-top: 12vh
+      flex-direction: column
+    .header-projects
+      width: 80%
+      color: $primary
+      text-align: left
+      @media screen and (max-width: 600px)
+        width: 100%
+        text-align: center
+        
+    .search-wrapper-new 
+      width: 20%
+      margin: 0 auto
+      position: relative
+      display: flex
+      justify-content: center
+
+      @media screen and (max-width: 600px) 
+        width: 100%
+        margin-top: 2vh
+        margin-bottom: 4vh
+      
+
+      input 
+        width: 100%
+        height: 30px
+        font-size: 1rem
+        padding: 0 1rem
+        border: none
+        border-radius: 8px
+        background-color: $background
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2)
+        transition: box-shadow 0.2s ease
+        &:focus 
+          outline: none
+          box-shadow: 0 0 0 3px rgba($primary, 0.3)
+
+        @media screen and (max-width: 600px) 
+          margin-top: 2vh
+          margin-bottom: 4vh
+      
+
+  .projects-oveview
+    padding: 2vh
+    width: 100%
+    p
+      color: $primary
+      overflow-wrap: break-word
+      display: -webkit-box
+      -webkit-line-clamp: 5
+      -webkit-box-orient: vertical
+      overflow: hidden
+      font-size: clamp(0.75rem, 2vw, 1rem)
+  .projects-wrapper
+    padding: 2vh
+    flex-wrap: wrap
+    display: flex
+    flex-direction: column
+    .projects-block
+      cursor: pointer
+      position: relative
+      width: 100%
+      height: 20vh
+      display: flex
+      flex-direction: row
+      border: 1px solid $secondary
+      border-radius: 1vh
+      overflow: hidden
+      background: $background
+      z-index: 4
+      will-change: transform
+      transition: transform 0.3s ease
+      &:hover
+        transform: scale(1.05)
+      img
+        object-fit: cover
+        width: 20%
+        height: auto
+        display: block
+        filter: grayscale(40%)
+        z-index: 100
+      .text 
+        width: 80vw
+        position: relative
+        padding: 2vh
+        display: flex
+        flex-direction: column
+        height: 16vh
+        h1  
+          color: $highliting
+          font-size: clamp(1rem, 3vw, 1.5rem)
+          font-weight: 600
+        p
+          color: $black
+          font-size: clamp(0.6rem, 2vw, 1rem)
+      .overlay
+        position: absolute
+        bottom: 0
+        right: 0
+        z-index: 2
+        width: 80vw
+        height: 100px
+        background: linear-gradient(to top, $primary 0%, transparent 100%)
+      
+
+    
+    
+          
+        
