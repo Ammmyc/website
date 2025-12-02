@@ -17,10 +17,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: SWSA Laboratory
+title: RCMH lab
 email: amy.hn.cheung@hku.hk
 description: >- # this means to ignore newlines until "baseurl:"
- PhD Student, Department of Social Work and Administration — research on adolescent mental health, school-based prevention and intervention programs.
+ Relational and cultural mental health lab (RCMH lab) is based on the research on adolescent mental health, school-based prevention and intervention programs.
 baseurl: "/website-swsa" # the subpath of your site, e.g. /blog
 url: "https://yerasik.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
