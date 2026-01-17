@@ -1,34 +1,16 @@
 #IMPORTANT
 #when you add data please upload an image in the assets/img/bg folder
-- title: Website Opened
-  image: https://images.pexels.com/photos/326514/pexels-photo-326514.jpeg
-  description: |
-    The website was created!
-  link: somelink
-  number: "1"
-  source: HKU SWSA
-  authors: Yerassyl Taisarinov
-  date: "25.11.2025"
 
 - title: We're Hiring
   image: https://images.pexels.com/photos/3127883/pexels-photo-3127883.jpeg
   description: |
     We're looking for new praoctive members for our collective. Visit the Contact-Us page and share your infomration with us.
   link: somelink
-  number: "2"
+  number: "1"
   source: HKU SWSA
   authors: Amy Cheung
   date: "15.12.2025"
 
-- title: New Entry
-  image: https://images.pexels.com/photos/3127883/pexels-photo-3127883.jpeg
-  description: |
-    New entry
-  link: somelink
-  number: "3"
-  source: Sample
-  authors: Sample
-  date: "17.01.2026"
 
 
 
