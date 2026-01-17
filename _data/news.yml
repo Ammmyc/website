@@ -20,6 +20,16 @@
   authors: Amy Cheung
   date: "15.12.2025"
 
+- title: New Entry
+  image: assets/img/bg/(The Belcher's)DSC_1489.jpg
+  description: |
+    New entry
+  link: somelink
+  number: "3"
+  source: Sample
+  authors: Sample
+  date: "17.01.2026"
+
 
 
 
