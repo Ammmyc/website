@@ -21,7 +21,7 @@
   date: "15.12.2025"
 
 - title: New Entry
-  image: assets/img/bg/(The Belcher's)DSC_1489.jpg
+  image: https://images.pexels.com/photos/3127883/pexels-photo-3127883.jpeg
   description: |
     New entry
   link: somelink
