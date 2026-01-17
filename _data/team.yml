@@ -1,5 +1,13 @@
 #IMPORTANT
-#when you change a slide change the data in the assets/img/people folder
+#when you add data change you can add an image in the assets/img/people folder
+#when you add data use the folowing format:
+#positions:
+# - title: Position 2
+#   members:
+#     - name: Person 2
+#       information: text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.
+#       email: person2@example.com
+#       image: assets/img/team/person0.png
 positions:
 
 
