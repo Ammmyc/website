@@ -1,5 +1,6 @@
 # Publications data - updated from user-provided citation list
-# This copy includes local bg images assigned randomly from assets/img/bg
+# When you add data please upload an image in the following folder assets/img/bg
+# Always use the following format
 
 - image: assets/img/bg/pexels-ryan-millier-1693965-3250582.webp
   title: "Depression in High-Ability vs. Typically Developing Adolescents: A Symptom- and Disorder-Level Analysis"
