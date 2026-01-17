@@ -1,5 +1,6 @@
 # Projects data
 # Each item: id, image, title, pi, co_pis, amount, years, funder, description, link, tag, origin
+# when you add data please upload an image in the wollowing folder assets/img/bg/ 
 - id: project-ai-dependency
   image: assets/img/bg/pexels-ryan-millier-1693965-3250582.webp
   title: "Longitudinal Effect of AI Use and Emotional Dependency"
