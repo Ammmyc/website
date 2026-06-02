@@ -3,7 +3,6 @@ layout: default
 ---
 
 {% include nav.html %}
-<!-- first container -->
 <div class="container-team">
   <h1 class="header">Meet the group</h1>
   <div class="title">
@@ -11,18 +10,18 @@ layout: default
       <hr>
   </div>
   <div class="member-content-wrapper">
-    <div class="first-content-box">
-      <div class="image-box">
-          <img src="../assets/img/team/person1.jpg" alt="Amy Cheung">
-      </div>
+    <div class="content-box">
       <div class="content-box-text">
         <h1>Amy Cheung</h1>
-        <p>Department of Social Work and Administration — research on adolescent mental health, school-based prevention and intervention programs.</p>     
-        <div class="email">
-          <a href="../team/Amy-Cheung/">More details</a>
+        <div class="image-box">
+          <img src="{{ site.baseurl }}/assets/img/team/Amy_Cheung.jpg" alt="Amy Cheung">
         </div>
-        <div class="overlay"></div>
+        <p class="content-box-excerpt">Department of Social Work and Administration — research on adolescent mental health, school-based prevention and intervention programs.</p>
       </div>
+      <div class="content-box-actions">
+        <a class="team-read-more" href="{{ site.baseurl }}/team/Amy-Cheung/">Read more</a>
+      </div>
+      <div class="overlay"></div>
     </div>
   </div>
   {% for position in site.data.team.positions %}
@@ -33,29 +32,108 @@ layout: default
   <div class="member-content-wrapper">
     {% for person in position.members %}
       <div class="content-box">
-          <div class="content-box-text">
+        <div class="content-box-text">
           <h1>{{ person.name }}</h1>
           <div class="image-box">
-            <img src="../{{ person.image }}" alt="{{ person.name }}">
+            <img src="{{ site.baseurl }}/{{ person.image }}" alt="{{ person.name }}">
           </div>
-
-          <p>{{ person.information }}</p>
-          </div>
-        
-      
-        <div class="email">
-          <a href="mailto:{{ person.email }}">{{ person.email }}</a>
+          <p class="content-box-excerpt">{{ person.information }}</p>
+        </div>
+        <template class="team-member-bio-source">{{ person.information }}</template>
+        <div class="content-box-actions">
+          <button
+            type="button"
+            class="team-read-more"
+            data-member-name="{{ person.name }}"
+            data-member-role="{{ position.title }}"
+            data-member-image="{{ site.baseurl }}/{{ person.image }}"
+            aria-haspopup="dialog"
+          >Read more</button>
         </div>
         <div class="overlay"></div>
-
       </div>
-      {% endfor %}
-    
-  </div>     
+    {% endfor %}
+  </div>
   {% endfor %}
 </div>
+
+<div class="team-modal" id="team-member-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="team-modal-title">
+  <div class="team-modal__backdrop" data-team-modal-close tabindex="-1"></div>
+  <div class="team-modal__panel">
+    <button type="button" class="team-modal__close" data-team-modal-close aria-label="Close profile">&times;</button>
+    <div class="team-modal__header">
+      <div class="team-modal__photo-wrap">
+        <img class="team-modal__photo" id="team-modal-photo" src="" alt="" width="120" height="150">
+      </div>
+      <div class="team-modal__intro">
+        <p class="team-modal__role" id="team-modal-role"></p>
+        <h2 class="team-modal__title" id="team-modal-title"></h2>
+      </div>
+    </div>
+    <div class="team-modal__body" id="team-modal-body"></div>
+  </div>
 </div>
- 
+
+<script>
+(function () {
+  var modal = document.getElementById('team-member-modal');
+  if (!modal) return;
+
+  var titleEl = document.getElementById('team-modal-title');
+  var roleEl = document.getElementById('team-modal-role');
+  var bodyEl = document.getElementById('team-modal-body');
+  var photoEl = document.getElementById('team-modal-photo');
+  var lastFocus = null;
+
+  function openModal(name, role, bio, image) {
+    lastFocus = document.activeElement;
+    titleEl.textContent = name;
+    roleEl.textContent = role || '';
+    roleEl.hidden = !role;
+    bodyEl.textContent = bio;
+    if (image) {
+      photoEl.src = image;
+      photoEl.alt = name;
+      photoEl.parentElement.hidden = false;
+    } else {
+      photoEl.removeAttribute('src');
+      photoEl.parentElement.hidden = true;
+    }
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.documentElement.classList.add('team-modal-open');
+    modal.querySelector('.team-modal__close').focus();
+  }
+
+  function closeModal() {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.documentElement.classList.remove('team-modal-open');
+    if (lastFocus) lastFocus.focus();
+  }
+
+  document.querySelectorAll('.team-read-more').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var card = btn.closest('.content-box');
+      var bioSource = card && card.querySelector('.team-member-bio-source');
+      if (!bioSource) return;
+      openModal(
+        btn.getAttribute('data-member-name'),
+        btn.getAttribute('data-member-role'),
+        bioSource.content.textContent.trim(),
+        btn.getAttribute('data-member-image')
+      );
+    });
+  });
+
+  modal.querySelectorAll('[data-team-modal-close]').forEach(function (el) {
+    el.addEventListener('click', closeModal);
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+  });
+})();
+</script>
+
 {% include footer.html %}
-
-

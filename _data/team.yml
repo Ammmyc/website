@@ -9,6 +9,32 @@
 #       email: person2@example.com
 #       image: assets/img/team/person0.png
 positions:
+  - title: Post-doctoral Fellow
+    members:
+      - name: Dr Erin Li
+        information: >-
+          Dr Erin Li is a Post-doctoral Fellow in the Department of Social Work and Social Administration at The University of Hong Kong. Her research examines how music-based intergroup contact interventions can promote relationships between socially segregated groups, including those divided by socioeconomic status, (mental) health status, and ethnicity. Working in Professor Amy Cheung's team, her current projects explore the use of AI and its emotional and behavioural impacts on adolescents and social workers. As an Australian-registered music therapist, she has extensive clinical experience with diverse communities, including children with autism spectrum disorder and individuals in palliative care, aged care, and disability services. She welcomes collaboration with like-minded researchers committed to fostering more inclusive and harmonious communities. Talks and workshops she can offer include promoting intergroup attitudes and relations through music-mediated interventions, music therapy in palliative care, and community music therapy.
+        email: amy.hn.cheung@hku.hk
+        image: assets/img/team/person_3.jpg
 
+  - title: PhD Candidates
+    members:
+      - name: Hu Huinan
+        information: >-
+          Hu Huinan is a PhD candidate in the Department of Social Work and Social Administration at The University of Hong Kong. Her research mainly focuses on children, adolescent and emerging adults' mental health, including digital use, depression, self-compassion, problematic behaviors, and positive development. Her work involves scale development and validation, and applies quantitative methods in large samples to explore mental health problems and related factors. She is open to talks on children and adolescent mental health and the improvement of protective factors. She is seeking collaborations focused on adolescents' digital use, scale development and validation, and translating research findings into actionable insights for schools, communities, and healthcare systems.
+        email: amy.hn.cheung@hku.hk
+        image: assets/img/team/person_1.jpg
 
+      - name: Xiyu Wei
+        information: >-
+          Xiyu Wei (ORCID 0009-0003-7020-6282) is a PhD candidate in the Department of Social Work and Social Administration at The University of Hong Kong. Her research lies at the intersection of quantitative research across psychology, psychiatry and social work, focusing on adolescent mental health, depression-anxiety symptom networks, peer exposure effects, and peer relationships. She employs network analysis and causal approaches with large-scale cohort and platform data to study the mechanisms of mental health problems and inform intervention design. Her work has appeared in venues such as General Psychiatry and BMC Public Health. She is open to talks on adolescent mental health, symptom co-occurrence and diffusion, and evaluation of social connectedness and digital interventions; and is seeking collaborations on longitudinal and platform data partnerships, methodological development (network modeling and causal inference), and multi-site population studies.
+        email: amy.hn.cheung@hku.hk
+        image: assets/img/team/person_2.jpg
 
+  - title: MPhil Students
+    members:
+      - name: Tian Qianqian
+        information: >-
+          Tian Qianqian is an MPhil student at the University of Hong Kong (ORCID 0009-0004-4522-8938), supervised by Dr Amy Cheung. Her main research area is studying how people behave when they are ill and how mindfulness-based interventions can help, especially in healthcare and education, aiming to improve the usefulness of these mindfulness techniques in both areas. She would be glad to give talks on the application of mindfulness-based interventions in clinical and educational settings, and is eager to pursue interdisciplinary collaborations centered on the research, development and practice of such mindfulness interventions.
+        email: amy.hn.cheung@hku.hk
+        image: assets/img/team/person_4.jpg

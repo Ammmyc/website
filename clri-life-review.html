@@ -1,0 +1,29 @@
+---
+layout: default
+title: CLRI Life Review Project
+description: A compassion-based life-review intervention helping ethnic minority elderly women in Hong Kong organise their life stories and improve mental health.
+---
+
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/clri-page.css">
+
+{% include nav.html %}
+
+<div class="clri-page">
+  <nav class="clri-page-nav" aria-label="CLRI sections">
+    <div class="clri-page-nav__inner">
+      <a href="{{ site.baseurl }}/clri-life-review/#background">About</a>
+      <a href="{{ site.baseurl }}/clri-life-review/#impact">Impact</a>
+      <a href="{{ site.baseurl }}/clri-life-review/#method">Method</a>
+      <a href="{{ site.baseurl }}/clri-life-review/#stories">Stories</a>
+      <a href="{{ site.baseurl }}/clri-life-review/#films">Films</a>
+      <a href="{{ site.baseurl }}/clri-life-review/#contact" class="clri-page-nav__cta">Contact</a>
+    </div>
+  </nav>
+
+  {% include clri-content.html %}
+  {% include clri-modal.html %}
+</div>
+
+<script src="{{ site.baseurl }}/assets/js/clri.js"></script>
+
+{% include footer.html %}
