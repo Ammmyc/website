@@ -37,6 +37,7 @@ gems:
   - jekyll-autoprefixer
   - jekyll-sitemap
 exclude:
+  - README.md
   - Gemfile
   - Gemfile.lock
 sass:
